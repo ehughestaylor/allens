@@ -11,21 +11,38 @@ $tertiary-color:#1e857a;
 // $font-stack:;
 
 
+/////////////// UNIVERSAL STYLES
+
 body{
   background-color: $primary-color;
+  overflow-x: hidden;
 }
 .container{
   width:85%;
 }
+// SHOE ANIMATION
+.shoe-dropin{
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+.anim-shoe{
+  max-width:400px;
+}
 
+
+// navigation
 nav{
   background-color: rgba(255,255,255,0.8);
   position: absolute;
   top: 0;
+  height: 80px;
 }
 nav ul a{
   color: $tertiary-color;
   margin-bottom: -2px;
+  line-height: 80px;
+  cursor: pointer!important;
 }
 nav ul li{
   line-height: auto;
@@ -36,23 +53,41 @@ nav ul li:hover{
 nav ul a:hover{
   color: white;
 }
-// top call to action
 
+// top call to action
 #index-banner{
   background-color: $secondary-color;
+  background-image: url('../images/banner-img.png');
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
   padding-top: 64px;
   padding-bottom: 45px;
+ .header,
+ {
+  text-shadow: 1px 2px 1px #26a69a;
+ }
+
 }
 .header{
   text-align: right;
 }
+.best-header{
+  position:relative;
+  z-index: 99;
+}
 
 // ----====FEATURED SHOE BRANDS---========
-.shoe-brand-cta{
-  height: 70px;
-  width: 100px;
-  display: inline-block;
-  margin-right: 1em;
+#shoebrands{
+  border-bottom: 2px solid $secondary-color;
+  box-shadow-bottom: 1px 1px 3px $secondary-color;
+  
+  .shoe-brand-cta{
+    height: 70px;
+    width: 100px;
+    display: inline-block;
+    margin-right: 1em;
+  }
 }
 
 //----=== FEATURED PRODUCTS ----======
@@ -65,8 +100,20 @@ nav ul a:hover{
 .shoe-image > img{
   width: 100%;
 }
+.see-all{
+  margin-top: 3rem;
+}
+//---===== SLIDER BOTTOM AND TESTIMONIALS ====-----
 
-
+.review-card{
+  background-color: rgba(0,0,0,0.5);
+}
+.testimonial-user-left{
+  height: 120px;
+  width: 120px;
+  border-radius:100%;
+  margin:1em 1em;
+}
 
 
 

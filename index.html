@@ -1,17 +1,23 @@
   <!DOCTYPE html>
   <html>
     <head>
+      <title>Allens Shoes</title>
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/animate.min.css">
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     </head>
     
     <body>
+    <!-- SHOE DROPDOWN -->
+      <div class="shoe-dropin animated bounceInDown">
+        <img class="responsive-img anim-shoe" src="images/dropdownshoe.png" alt="">
+      </div>
     <nav role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="images/allensLogo.png" alt=""></a>
       <!-- desktop nav -->
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Home</a></li>
@@ -31,24 +37,24 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </div>
   </nav>
-
+  
   <div class="section no-pad-bot white-text" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center">Starter Template</h1>
+      <h1 class="header center best-header">"Best Shoe Store in <br> Atlantic City"</h1>
       <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        <h5 class="header col s12 light">As Voted by the Atlantic City Press</h5>
       </div>
       <div class="row right">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light">Get Started</a>
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light">Learn Why</a>
       </div>
       <br><br>
     </div>
   </div>
 
-  <!-- icon section -->
+  <!--Shoe Brand Featured Section -->
     <div class="row">
-      <div class="col s6 offset-s6 grid-example">          
+      <div id="shoebrands" class="col s12 offset-m6">          
         <div class="card shoe-brand-cta"></div>
         <div class="card shoe-brand-cta"></div>
         <div class="card shoe-brand-cta"></div>
@@ -67,14 +73,14 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img src="images/shoes.jpg" alt="">
+              <img src="images/shoes.png" alt="">
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.
               I am convenient because I require little markup to use effectively.</p>
             </div>
-            <div class="card-action">
-              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text">Buy Now</a>
+            <div class="card-action center-align">
+              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text">View</a>
             </div>
           </div>
         </div>
@@ -82,14 +88,14 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img src="images/shoes.jpg" alt="">
+              <img src="images/shoes.png" alt="">
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.
               I am convenient because I require little markup to use effectively.</p>
             </div>
-            <div class="card-action">
-              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text">Buy Now</a>
+            <div class="card-action center-align">
+              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text">View</a>
             </div>
           </div>
         </div>
@@ -97,76 +103,100 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img src="images/shoes.jpg" alt="">
+              <img src="images/shoes.png" alt="">
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.
               I am convenient because I require little markup to use effectively.</p>
             </div>
-            <div class="card-action">
-              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text">Buy Now</a>
+            <div class="card-action center-align">
+              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text">View</a>
             </div>
           </div>
         </div>
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img src="images/shoes.jpg" alt="">
+              <img src="images/shoes.png" alt="">
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.
               I am convenient because I require little markup to use effectively.</p>
             </div>
             <div class="card-action">
-              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text">Buy Now</a>
+              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text">View</a>
             </div>
           </div>
         </div>
       </div>
+      <div class="col s12 m12 center-align see-all">
+         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text"> See All</a>
+      </div>
+      <!-- end of featured section  -->
 
+    </div>
     </div>
     <br><br>
-
-    <div class="section">
-
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="images/shoes.png"> <!-- random image -->
+          <div class="caption center-align" style="top:3%;">
+            <!-- start of review -->
+            <div class="card review-card">
+              <div class="row">
+              <!-- review user image -->
+                <div class="col s12 m3"> 
+                  <div class="testimonial-user-left">
+                    <img class="circle" src="images/coder.jpg">
+                  </div>
+                </div>
+              <!-- user review content -->
+                <div class="col s12 m9">            
+                  <div class="card-content" style="padding-bottom:0;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
+                  </div>
+                </div>
+              </div>
+              <!-- user name row -->
+              <div class="row">
+                <div class="col s6 offset-s6"><span class="flow-text">-Ann Taylor</span></div>
+              </div>
+            </div>
+            <!-- end of review -->
+          </div>
+        </li>
+        <!-- end of slide -->
+        <li>
+          <img src="images/banner-img.png"> <!-- random image -->
+          <div class="caption center-align" style="top:3%;">
+            <!-- start of review -->
+            <div class="card review-card">
+              <div class="row">
+              <!-- review user image -->
+                <div class="col s12 m3"> 
+                  <div class="testimonial-user-left">
+                    <img class="circle" src="images/coder.jpg">
+                  </div>
+                </div>
+              <!-- user review content -->
+                <div class="col s12 m9">            
+                  <div class="card-content" style="padding-bottom:0;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
+                  </div>
+                </div>
+              </div>
+              <!-- user name row -->
+              <div class="row">
+                <div class="col s6 offset-s6"><span class="flow-text">-Ann Taylor</span></div>
+              </div>
+            </div>
+            <!-- end of review -->
+          </div>
+        </li>
+        <!-- end of slide -->
+      </ul>
     </div>
-  </div>
-<!--     FOOTER START  -->
-    <footer class="page-footer orange">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Company Bio</h5>
-            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-          </div>
-          <div class="col l3 s12">
-            <h5 class="white-text">Settings</h5>
-            <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-          <div class="col l3 s12">
-            <h5 class="white-text">Connect</h5>
-            <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-        </div>
-      </div>
-    </footer>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
