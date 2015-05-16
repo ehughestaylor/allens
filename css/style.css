@@ -1,0 +1,48 @@
+body {
+  background-color: #e7d7c8; }
+
+.container {
+  width: 85%; }
+
+nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0; }
+
+nav ul a {
+  color: #1e857a;
+  margin-bottom: -2px; }
+
+nav ul li {
+  line-height: auto; }
+
+nav ul li:hover {
+  border: 1px solid white; }
+
+nav ul a:hover {
+  color: white; }
+
+#index-banner {
+  background-color: #b32b42;
+  padding-top: 64px;
+  padding-bottom: 45px; }
+
+.header {
+  text-align: right; }
+
+.shoe-brand-cta {
+  height: 70px;
+  width: 100px;
+  display: inline-block;
+  margin-right: 1em; }
+
+.featured-prod-title {
+  color: #b32b42; }
+
+.shoe-image {
+  position: relative; }
+
+.shoe-image > img {
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
