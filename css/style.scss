@@ -14,11 +14,8 @@ $tertiary-color:#1e857a;
 /////////////// UNIVERSAL STYLES ///////////////////
 
 body{
-  background-color: $primary-color;
+  background-image:url(../images/sprinkles.png);
   overflow-x: hidden;
-}
-.container{
-  width:85%;
 }
 
 ///////////// NAVIGATION ///////////////////
@@ -43,6 +40,9 @@ nav ul li:hover{
 nav ul a:hover{
   color: white;
 }
+i.mdi-navigation-menu{
+  color: $tertiary-color;
+}
 
 ////////////////HOME PAGE STYLES////////////////
 // SHOE ANIMATION
@@ -64,8 +64,7 @@ nav ul a:hover{
   background-size:100% 100%;
   padding-top: 64px;
   padding-bottom: 45px;
- .header,
- {
+ .header{
   text-shadow: 1px 2px 1px #26a69a;
  }
 
@@ -116,13 +115,19 @@ nav ul a:hover{
   margin:1em 1em;
 }
 
+/********************/
 
 /////////////////// ABOUT PAGE STYLES //////////////////////////
 .map-section{
   padding-top:80px;
 }
-
+#contact-form{
+  background-image:url(../images/banner-img.png);
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+}
 //FORM STYLES
+  
   /* label color */
    .input-field label {
      color: #000;
@@ -162,15 +167,47 @@ nav ul a:hover{
     background-color:$tertiary-color;
    }
 
-//COLUMNS
+// CONTACT COLUMNS
+.column-left{
+  background-image:url(../images/sprinkles.png);
+  h2{
+    color: $tertiary-color;
+  }
+}
 .column-right{
+  background-image:url(../images/sprinkles.png);
+  h3{
+    color: $tertiary-color;
+  }
   .collection .collection-item {
-    background-color: #fff;
+    background-color: transparent;
     line-height: 1.0rem;
     padding: 6px 20px;
     margin: 0;
     border-bottom: 1px solid #e0e0e0;
   }
+}
+
+
+/**************/
+
+//////////////////ABOUT PAGE STYLES
+#about-banner{
+  background-color: $tertiary-color;
+  height: auto;
+}
+
+.img-back{
+  display: none;
+}
+
+.employee-container{
+  padding-top: 3rem;
+  width: 46%;
+}
+.employee-img{
+  height: 150px;
+  width: 150px;
 }
 
 

@@ -1,9 +1,6 @@
 body {
-  background-color: #e7d7c8;
+  background-image: url(../images/sprinkles.png);
   overflow-x: hidden; }
-
-.container {
-  width: 85%; }
 
 nav {
   background-color: rgba(255, 255, 255, 0.8);
@@ -25,6 +22,9 @@ nav ul li:hover {
 
 nav ul a:hover {
   color: white; }
+
+i.mdi-navigation-menu {
+  color: #1e857a; }
 
 .shoe-dropin {
   position: absolute;
@@ -82,8 +82,14 @@ nav ul a:hover {
   border-radius: 100%;
   margin: 1em 1em; }
 
+/********************/
 .map-section {
   padding-top: 80px; }
+
+#contact-form {
+  background-image: url(../images/banner-img.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
 
 /* label color */
 .input-field label {
@@ -121,11 +127,36 @@ nav ul a:hover {
 #submit-button:hover {
   background-color: #1e857a; }
 
-.column-right .collection .collection-item {
-  background-color: #fff;
-  line-height: 1.0rem;
-  padding: 6px 20px;
-  margin: 0;
-  border-bottom: 1px solid #e0e0e0; }
+.column-left {
+  background-image: url(../images/sprinkles.png); }
+  .column-left h2 {
+    color: #1e857a; }
+
+.column-right {
+  background-image: url(../images/sprinkles.png); }
+  .column-right h3 {
+    color: #1e857a; }
+  .column-right .collection .collection-item {
+    background-color: transparent;
+    line-height: 1.0rem;
+    padding: 6px 20px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0; }
+
+/**************/
+#about-banner {
+  background-color: #1e857a;
+  height: auto; }
+
+.img-back {
+  display: none; }
+
+.employee-container {
+  padding-top: 3rem;
+  width: 46%; }
+
+.employee-img {
+  height: 150px;
+  width: 150px; }
 
 /*# sourceMappingURL=style.css.map */
