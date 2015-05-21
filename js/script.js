@@ -9,5 +9,5 @@ $(document).ready(function(){
   $('.modal-trigger').leanModal();
   //start slider and have slider be full width
   $('.slider').slider({full_width: true});
-
+      
 });
