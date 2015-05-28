@@ -8,27 +8,40 @@ $secondary-color:#b32b42; //rgba(179,43,66);
 // green
 $tertiary-color:#1e857a;
 
-// $font-stack:;
-
-
 /////////////// UNIVERSAL STYLES ///////////////////
 
 body{
   background-image:url(../images/sprinkles.png);
   overflow-x: hidden;
 }
-
+.container{
+  width: 86.666%;
+}
+a{
+  text-decoration: none!important;
+}
+.btn, .btn-large{
+  background-color:$tertiary-color;
+}
+.slider .slides {
+  background-color: transparent;
+  margin: 0;
+  height: 400px;
+}
+nav .button-collapse i{
+  line-height: 60px;
+}
 ///////////// NAVIGATION ///////////////////
 nav{
   background-color: rgba(255,255,255,0.8);
   position: absolute;
   top: 0;
-  height: 80px;
+  height: 60px;
 }
 nav ul a{
   color: $tertiary-color;
   margin-bottom: -2px;
-  line-height: 80px;
+  line-height: 60px;
   cursor: pointer!important;
 }
 nav ul li{
@@ -54,7 +67,8 @@ i.mdi-navigation-menu{
 /////// SOCIAL
 .social{
   position:fixed;
-  top: 65px;
+  top: 80px;
+  z-index: 9999;
   ul{
     padding:1em;
     background-color: $tertiary-color;
@@ -70,31 +84,80 @@ i.mdi-navigation-menu{
     }
   }
 }
+.mobile-contact{
+  display: none;
+}
+
+
+//footer
+
+footer.page-footer{
+  background-color: $tertiary-color;
+  padding: 0;
+  .color-text{
+  }
+  .shoe-cards{
+    color: white;
+    text-shadow: none;
+    a{
+      color: #FFF;
+      text-decoration: none;
+    }
+    a:hover{
+      color: $primary-color;
+    }
+    ul{
+      margin-top: 0.3em;
+      li{
+      display:inline-block; 
+      padding:0 0.5em;
+      font-size: 0.8em;
+      }
+    }
+    p{
+      font-size: 0.8em;
+    }
+  }
+}
+.stitched {
+  padding: 7px 20px;
+  margin: 0;
+  background: #F8F8FF;
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+  border-top: 2px dashed white;
+  text-shadow: 1px 1px 2px #F8F8FF;
+  font-weight: normal;
+}
+
+
+
 
 ////////////////HOME PAGE STYLES////////////////
 // SHOE ANIMATION
-.shoe-dropin{
+.logo-dropin{
   position: absolute;
   top: 0;
   left: 0;
 }
-// .anim-shoe{
-//   max-width:400px;
-// }
-
-// top call to action
-#index-banner{
+.brand-logo{
+  img{
+  height: 55px;
+  }
+}
+#logo{
+  height: 200px;
+  padding: 1em;
+}
+#top-banner{
+  padding-top: 60px;
+}
+#banner-row{
   background-color: $secondary-color;
-  background-image: url('../images/banner-img.png');
-  background-position: center;
-  background-repeat:no-repeat;
-  background-size:100% 100%;
-  padding-top: 64px;
-  padding-bottom: 45px;
- .header{
-  text-shadow: 1px 2px 1px #26a69a;
- }
-
+}
+#store-front-hd{
+  padding: 1em;
 }
 .header{
   text-align: right;
@@ -103,14 +166,20 @@ i.mdi-navigation-menu{
   position:relative;
   z-index: 99;
 }
+.banner-text{
+  color: white;
+}
 
 // ----====FEATURED SHOE BRANDS---========
 #shoebrands{  
   .shoe-brand-cta{
     display: inline-block;
     margin-right: 1em;
-    background-color:transparent;
-    box-shadow:none;
+    background-color: transparent;
+    box-shadow: none;
+    margin: 1em -6px;
+    border-bottom: 2px solid $secondary-color;
+    padding: 0.2em 1em;
     img{
       height: 50px;
       vertical-align: middle;
@@ -129,30 +198,80 @@ i.mdi-navigation-menu{
   width: 100%;
 }
 .see-all{
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 //---===== SLIDER BOTTOM AND TESTIMONIALS ====-----
+
+
 
 .review-card{
   background-color: rgba(0,0,0,0.5);
 }
 .testimonial-user-left{
-  height: 120px;
-  width: 120px;
-  border-radius:100%;
-  margin:1em 1em;
+  // height: 120px;
+  // width: 120px;
+  // border-radius:100%;
+  // margin:1em 1em;
 }
 
+.slider{
+  z-index: -4;
+}
+
+.carousel-container{
+  width: 100%;
+  padding:0;
+  margin:0;
+  z-index: 0;
+  position:relative;
+}
+.carousel-inner{
+  width: 100%;
+  max-height: 400px !important;
+}
+.item{
+  width: 100%;
+  img{
+    width:100%;
+  }
+}
+#slider-thumbs{
+  position:absolute;
+  bottom:0;
+  z-index: 9999;
+}
+#pic-selectors{
+  a{
+    background-color:white;
+    cursor: pointer;
+    img{
+    height: 70px;
+    border: 2px solid white;
+    }
+  }
+}
+.review-card{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 9999;
+  top: 30px;
+  width: 50%;
+  left: 25%;
+  color: white;
+}
+#pic-selectors a:hover img{
+  border: 2px solid $secondary-color;
+}
 /********************/
 
 /////////////////// CONTACT PAGE STYLES //////////////////////////
 .map-section{
-  padding-top:80px;
+  padding-top:55px;
 }
 #contact-form{
-  background-image:url(../images/banner-img.png);
-  background-repeat:no-repeat;
-  background-size:100% 100%;
+  // background:url(../images/sprinkles.png);
+  // background-repeat:no-repeat;
+  // background-size:100% 100%;
 }
 //FORM STYLES
   
@@ -197,13 +316,13 @@ i.mdi-navigation-menu{
 
 // CONTACT COLUMNS
 .column-left{
-  background-image:url(../images/sprinkles.png);
+  background-image:white;
   h2{
     color: $tertiary-color;
   }
 }
 .column-right{
-  background-image:url(../images/sprinkles.png);
+  background-image:white;
   h3{
     color: $tertiary-color;
   }
@@ -249,7 +368,7 @@ i.mdi-navigation-menu{
 }
 
 
-////////////////PRODUCT PAGE STYLES
+////////////////PRODUCTS PAGE STYLES
 #product-container{
   margin-top: 90px;
 }
@@ -257,47 +376,198 @@ i.mdi-navigation-menu{
 .brand-box{
   height: 200px;
 }
-.s2{
-  background-color:green;
-}
-.s3:nth-child(2){
-  background-color: white;
-}
-.s3{
-  background-color:blue;
-}
-.s4{
-  background-color:purple
-}
-.s5{
-  background-color:gold;
-}
-.s6{
-  background-color:yellow;
+.bottom-sheet{
+  height: 275px;
 }
 #uggBack{
+  background-color: white;
   background-image:url(../images/ugg-bg.png);
-  background-size: 100%;
+  background-size: 88%;
   background-repeat:no-repeat;
-  background-position: center; 
+  background-position: bottom; 
 }
 #clarksBack{
-  background-image:url(../images/clarks-bg.png);
+  background-color: white;
+  background-image:url(../images/clarks.png);
   background-size:100%;
   background-repeat:no-repeat;
   background-position: center; 
 
 }
 #danskoBack{
+  background-color: white;
   background-image:url(../images/dansko.png);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position: bottom; 
+}
+#pikolinosBack{
+  background-color: white;
+  background-image:url(../images/pikolinos.png);
   background-size:100%;
   background-repeat:no-repeat;
   background-position: center; 
 }
-// MEDIA QUERIES
+#flyBack{
+  background-color: white;
+  background-image:url(../images/fly.png);
+  background-size:75%;
+  background-repeat:no-repeat;
+  background-position: center;   
+}
+#minnetonBack{
+  background-color: white;
+  background-image:url(../images/minnetonkanew.png);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position: center;  
+}
+#merrellBack{
+  background-color: white;
+  background-image:url(../images/merrell.png);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position: center;   
+}
+#birkenBack{
+  background-color: white;
+  background-image:url(../images/birkenstock.png);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position: center;   
+}
+#eccoBack{
+  background-color: white;
+  background-image:url(../images/ecco_logo.png);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position: center;   
+}
+#kiplingBack{
+  background-color: white;
+  background-image:url(../images/kipling.png);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position: center;    
+}
+#rockportBack{
+  background-color: white;
+  background-image:url(../images/rockport.png);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position: center;  
+}
+#sasBack{
+  background-color: white;
+  background-image:url(../images/sas.png);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position: center;    
+}
+#nbBack{
+  background-color:white;
+  background-image:url(../images/nb.png);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position: center;   
+}
+.brand-box{
+  transition-duration:0.5s;
+  -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+}
+.modal-trigger:hover{
+  .brand-box{
+    background-size:80%!important;
+    transition-duration: 0.5s;
+      -webkit-transition-duration:0.5s;
+      -moz-transition-duration:0.5s;
+      -o-transition-duration:0.5s;
+    transition-timing-function: linear;
+  }
+}
 
+
+/////////////// BLOG PAGES 
+/* blog page */
+.blog{
+  padding-top:80px;
+  background-image: url(/images/sprinkles.png);
+}
+.blog-post{
+  width:33%;
+  float:left;
+}
+/* //single post page  */
+.single-post {
+  padding-top: 80px;
+  background-image: url(/images/sprinkles.png);
+}
+
+/* Thumbnail size */
+img.attachment-post-thumbnail {
+  height:100%;
+}
+/* individual-post-size */
+.individual-post-img img{
+  height: auto;
+}
+.form-allowed-tags{
+  display: none;
+}
+.form-submit .submit{
+    background-color: #1e857a;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  height: 54px;
+  line-height: 56px;
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  outline: 0;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  margin: 1em 0;
+  color: white;
+}
+
+
+////////////////////////// MEDIA QUERIES
+@media screen and (max-width:750px){
+  #slider-thumbs{
+    display: none;
+  }
+  .review-card{
+    width: 80%;
+    left: 10%;
+    top: 0;
+    .testimonial-user-left{
+      display: none;
+    }
+  }
+}
 @media screen and (max-width:600px){
-  .shoe-dropin{
+  .logo-dropin{
     img{
       display: none;
     }
@@ -305,7 +575,20 @@ i.mdi-navigation-menu{
   .social{
     z-index: 9999;
     top: inherit;
-    bottom:0;
+    top:0;
+    right: 0;
+    .soc-media-icons{
+      display: none;
+    }
+    .mobile-contact{
+      display:block;
+        li{
+          display: inline-block;
+          i{
+            font-size: 1.1em;
+          }
+        }
+    }
     ul{
       li{
         display: inline-block;
@@ -321,7 +604,29 @@ i.mdi-navigation-menu{
     }
   }
 
+  #banner-row{
+    display: block;
+  }
 }
 
+// products page QUERIES
+@media screen and(max-width:900px){
+  .brand-box{
+    height: 150px;
+  }
+}
+
+@media screen and(max-width:500px){
+  .brand-box{
+    height: 86px;
+  }
+  .page-footer{
+    padding-bottom:3em;
+    .shoe-cards{
+      text-align: center;
+    }
+  }
+
+}
 
 

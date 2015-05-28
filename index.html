@@ -2,6 +2,7 @@
   <html>
     <head>
       <title>Allens Shoes</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/style.css">
@@ -12,66 +13,92 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     </head>
     
-    <!-- SHOE DROPDOWN -->
-      <div class="shoe-dropin animated bounceInDown">
-        <img class="responsive-img anim-shoe" src="images/dropdownshoe1.png" alt="">
-      </div>
     <!--   body start -->
     <body>
     <nav role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="images/allensLogo.png" alt=""></a>
+      <div class="nav-wrapper container"><!-- <a id="logo-container" href="#" class="brand-logo"><img src="images/allensLogo.png" alt=""></a> -->
       <!-- desktop nav -->
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Home</a></li>
         <li><a href="about/index.html">About</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Blogs</a></li>
+        <li><a href="products/index.html">Products</a></li>
+        <li><a href="/blog/">Blog</a></li>
         <li><a href="contact/index.html">Contact Us</a></li>
       </ul>
       <!-- mobile nav -->
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Home</a></li>
         <li><a href="about/index.html">About</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Blogs</a></li>
+        <li><a href="products/index.html">Products</a></li>
+        <li><a href="/blog/">Blog</a></li>
         <li><a href="contact/index.html">Contact Us</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </div>
   </nav>
 
-  <div class="section no-pad-bot white-text" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center best-header">"Best Shoe Store in <br> Atlantic City"</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">As Voted by the Atlantic City Press</h5>
+<!--   <div class="section no-pad-bot white-text" id="home-banner">
+    <div class="valign-wrapper row" id="banner-row">
+      <div class="center-align valign col s12 ">
+        <div class="animated bounceInDown">
+        <img id="logo" class="responsive-img" src="images/allensLogo.png" alt="">
+        </div>
       </div>
-      <div class="row right">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light">Learn Why</a>
+      <div class="col s12">
+        <img class="responsive-img" src="images/store-front.jpg" alt="">
       </div>
-      <br><br>
+
     </div>
+  </div> -->
+
+
+  <div id="top-banner">
+     <div id="banner-row" class="valign-wrapper row" width="100%">
+      <div class="col s12 m6 center-align">        
+        <div class="animated bounceInDown">
+          <img id="logo" class="responsive-img" src="images/allensLogo.png" alt="">
+        </div>
+        <div class="animated fadeIn banner-text">
+          <h3 class="header center best-header">"Best Shoe Store in <br> Atlantic City"</h3>
+          <div class="row center">
+            <h5 class="header col s12 light">As Voted by the Atlantic City Press</h5>
+          </div>
+          <div class="row right">
+            <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light">Learn Why</a>
+          </div>
+        </div>
+      </div>
+      <div id="store-front-hd" class="col s12 m6">
+        <img class="responsive-img" src="images/store-front.jpg" alt="">
+      </div>
+    </div>   
   </div>
+
+  <!-- SOCIAL MEDIA WIDGETS -->
   <div class="social">
-    <ul>
+    <ul class="soc-media-icons">
       <li><i class="fa fa-facebook"></i></li>
       <li><i class="fa fa-twitter"></i></li>
       <li><i class="fa fa-google"></i></li>
       <li><i class="fa fa-pinterest"></i></li>
       <li><i class="fa fa-instagram"></i></li>
     </ul>
+    <ul class="mobile-contact">
+      <li><a href="tel:555-555-5555"><i class="mdi-communication-phone"></i></a></li>
+      <li><a href="https://www.google.com/maps/place/Allen's+Shoe+Store/@39.385538,-74.556035,15z/data=!4m2!3m1!1s0x0:0x96cacb1547f50edb?sa=X&ei=soJkVbjsDMHPsQS0gYGADw&ved=0CI8BEPwSMA4"><i class="mdi-maps-directions"></i></a></li>
+    </ul>
   </div>
-
-
+  
   <!--Shoe Brand Featured Section -->
     <div id="featured-brands" class="row">
-      <div id="shoebrands" class="col s12 right-align">          
-        <div class="card shoe-brand-cta"><img src="images/ugg.png" alt=""></div>
-        <div class="card shoe-brand-cta"><img src="images/nb.png" alt=""></div>
-        <div class="card shoe-brand-cta"><img src="images/clarks.png" alt=""></div>
-        <div class="card shoe-brand-cta"><img src="images/dansko.png" alt=""></div>
-        <div class="card shoe-brand-cta"><img src="images/sas.png" alt=""></div>
+      <div id="shoebrands" class="col s12 right-align">  
+        <div class="shoe-container">      
+          <div class="card shoe-brand-cta"><img src="images/ugg.png" alt=""></div>
+          <div class="card shoe-brand-cta"><img src="images/sas.png" alt=""></div>
+          <div class="card shoe-brand-cta"><img src="images/nb.png" alt=""></div>
+          <div class="card shoe-brand-cta"><img src="images/clarks.png" alt=""></div>
+          <div class="card shoe-brand-cta"><img src="images/dansko.png" alt=""></div>
+        </div>  
       </div>
     </div>
 
@@ -84,7 +111,7 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img src="images/shoes.png" alt="">
+              <img src="images/womens.jpg" alt="">
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.
@@ -99,7 +126,7 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img src="images/shoes.png" alt="">
+              <img src="images/womens.jpg" alt="">
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.
@@ -114,7 +141,7 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img src="images/shoes.png" alt="">
+              <img src="images/womens.jpg" alt="">
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.
@@ -128,7 +155,7 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img src="images/shoes.png" alt="">
+              <img src="images/womens.jpg" alt="">
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.
@@ -146,74 +173,135 @@
       <!-- end of featured section  -->
 
     </div>
-    </div>
-    <br><br>
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <img src="images/shoes.png"> <!-- random image -->
-          <div class="caption center-align" style="top:3%;">
-            <!-- start of review -->
-            <div class="card review-card">
-              <div class="row">
-              <!-- review user image -->
-                <div class="col s12 m3"> 
-                  <div class="testimonial-user-left">
-                    <img class="circle" src="images/coder.jpg">
+   </div>
+<div class="carousel-container">
+    <!-- main slider carousel -->
+    <div class="row" style="margin-bottom:0;">
+      <div id="slider">
+        <div id="carousel-bounding-box">
+          <div id="myCarousel" class="carousel slide">
+          <!-- main slider carousel items -->
+          <div class="carousel-inner">
+            <div class="active item" data-slide-number="0">
+              <img src="images/merrell-carousel.jpg" >
+                <!-- start of review -->
+                <div class="card review-card">
+                  <div class="row">
+                  <!-- review user image -->
+                    <div class="col s12 m3"> 
+                      <div class="testimonial-user-left">
+                        <img class="img-responsive circle" src="images/stock-girl.jpg">
+                      </div>
+                    </div>
+                  <!-- user review content -->
+                    <div class="col s12 m9">            
+                      <div class="card-content" style="padding-bottom:0;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- user name row -->
+                  <div class="row">
+                    <div class="col s6 offset-s6"><span class="flow-text">-John Doe</span></div>
                   </div>
                 </div>
-              <!-- user review content -->
-                <div class="col s12 m9">            
-                  <div class="card-content" style="padding-bottom:0;">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
-                  </div>
-                </div>
-              </div>
-              <!-- user name row -->
-              <div class="row">
-                <div class="col s6 offset-s6"><span class="flow-text">-Ann Taylor</span></div>
-              </div>
+              <!-- end review -->
             </div>
-            <!-- end of review -->
-          </div>
-        </li>
-        <!-- end of slide -->
-        <li>
-          <img src="images/merrel.jpg"> <!-- random image -->
-          <div class="caption center-align" style="top:3%;">
-            <!-- start of review -->
-            <div class="card review-card">
-              <div class="row">
-              <!-- review user image -->
-                <div class="col s12 m3"> 
-                  <div class="testimonial-user-left">
-                    <img class="circle" src="images/coder.jpg">
+            <div class="item" data-slide-number="1">
+              <img src="images/ugg-carousel.jpg" >
+              <!-- start of review -->
+                <div class="card review-card">
+                  <div class="row">
+                  <!-- review user image -->
+                    <div class="col s12 m3"> 
+                      <div class="testimonial-user-left">
+                        <img class="img-responsive circle" src="images/stock-girl.jpg">
+                      </div>
+                    </div>
+                  <!-- user review content -->
+                    <div class="col s12 m9">            
+                      <div class="card-content" style="padding-bottom:0;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- user name row -->
+                  <div class="row">
+                    <div class="col s6 offset-s6"><span class="flow-text">-John Doe</span></div>
                   </div>
                 </div>
-              <!-- user review content -->
-                <div class="col s12 m9">            
-                  <div class="card-content" style="padding-bottom:0;">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
-                  </div>
-                </div>
-              </div>
-              <!-- user name row -->
-              <div class="row">
-                <div class="col s6 offset-s6"><span class="flow-text">-Ann Taylor</span></div>
-              </div>
+              <!-- end review -->
             </div>
-            <!-- end of review -->
+            <div class="item" data-slide-number="2">
+              <img src="images/bernie-carousel.jpg" >
+              <!-- start of review -->
+                <div class="card review-card">
+                  <div class="row">
+                  <!-- review user image -->
+                    <div class="col s12 m3"> 
+                      <div class="testimonial-user-left">
+                        <img class="img-responsive circle" src="images/stock-girl.jpg">
+                      </div>
+                    </div>
+                  <!-- user review content -->
+                    <div class="col s12 m9">            
+                      <div class="card-content" style="padding-bottom:0;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- user name row -->
+                  <div class="row">
+                    <div class="col s6 offset-s6"><span class="flow-text">-John Doe</span></div>
+                  </div>
+                </div>
+              <!-- end review -->
+            </div>
           </div>
-        </li>
-        <!-- end of slide -->
-      </ul>
-    </div>
-
+          <div class="col-md-12" id="slider-thumbs"> 
+            <!-- thumb navigation carousel items -->
+            <ul id="pic-selectors" class="list-inline center-align">
+              <li> <a id="carousel-selector-0" class="selected">
+                <img src="images/merrell-carousel.jpg" class="img-responsive z-depth-3">
+              </a></li>
+              <li> <a id="carousel-selector-1">
+                <img src="images/ugg-carousel.jpg" class="img-responsive z-depth-3">
+              </a></li>
+              <li> <a id="carousel-selector-2">
+                <img src="images/bernie-carousel.jpg" class="img-responsive z-depth-3">
+              </a></li>
+            </ul>  
+          </div>
+        </div>
+      </div>
+  </div>
+    <!--/main slider carousel-->
+    <footer class="page-footer stitched">
+      <div class="container">
+        <div class="row" style="margin-bottom:0;">
+          <div class="col l5 s12 shoe-cards">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="about/index.html">About</a></li>
+              <li><a href="products/index.html">Products</a></li>
+              <li><a href="/blog/">Blogs</a></li>
+              <li><a href="contact/index.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col l7 s12 shoe-cards">
+            <p class="color-text right-align">
+              &copy; 2015 Argyle Interactive
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="js/materialize.min.js"></script>
+        <script src="js/velocity.min.js"></script>
 
         <script src="js/script.js"></script>
 
