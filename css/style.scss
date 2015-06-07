@@ -94,6 +94,7 @@ i.mdi-navigation-menu{
 footer.page-footer{
   background-color: $tertiary-color;
   padding: 0;
+  margin-top: 0;
   .color-text{
   }
   .shoe-cards{
@@ -371,10 +372,13 @@ footer.page-footer{
 ////////////////PRODUCTS PAGE STYLES
 #product-container{
   margin-top: 90px;
+  margin-right: 20px;
 }
 
 .brand-box{
   height: 200px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 .bottom-sheet{
   height: 275px;
@@ -552,6 +556,7 @@ img.attachment-post-thumbnail {
 }
 
 
+
 ////////////////////////// MEDIA QUERIES
 @media screen and (max-width:750px){
   #slider-thumbs{
@@ -626,7 +631,6 @@ img.attachment-post-thumbnail {
       text-align: center;
     }
   }
-
 }
 
 

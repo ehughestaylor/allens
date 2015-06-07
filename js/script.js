@@ -4,7 +4,23 @@
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
 
+// var checkOpenStatus = function () {
+//     var d = new Date();
+//     var date = d.getHours();
+//     var day = d.getDay();
+//     if ((date > 9) && (date < 20) && (day != 0)) {
+//         y = "<a style=\"color:#FFF\">We're Open!</a>";
+//     } else {
+//         y = "<a style=\"color:#FFF\">Sorry we're Closed.</a>";
+//     }
+//     document.getElementById("open-close").innerHTML = y;
+//     setTimeout(checkOpenStatus,15000);
+// };
+
+
+
 $(document).ready(function(){
+  checkOpenStatus();
   $('.slider').slider({full_width: true});
   // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
   $('.modal-trigger').leanModal();

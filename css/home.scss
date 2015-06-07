@@ -1,0 +1,105 @@
+// tan
+$primary-color:#e7d7c8;
+
+// red
+$secondary-color:#b32b42; //rgba(179,43,66);
+
+// green
+$tertiary-color:#1e857a;
+
+// STORE HOURS
+#open{
+  color: $tertiary-color!important;
+  background-color:white;
+}
+
+nav {
+  box-shadow: none;
+  position: absolute;
+}
+#storeInfo{
+  position: absolute;
+  top: 0;
+  background-color: #1e857a;
+  height: 30px;
+}
+
+#storeInfo ul a{
+  line-height: 30px;
+  color: white;
+}
+
+#pageNav{
+  top:30px;
+  #logo-container{
+    line-height: 55px;
+  }
+}
+.main-body{
+  overflow: hidden;
+  background-image: url('../images/new-front.JPG');
+  background-size:100%;
+}
+
+.section{
+  padding: 0;
+}
+
+.row{
+  margin-bottom: 0;
+}
+
+.top-row > .col{
+  height: 100vh;
+}
+
+
+.page-footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.va-slice{
+  background-color: blue;
+}
+
+#carousel > img{
+  height: 100px;
+  width: 300px;
+  background-color: white;
+  padding: 2em;
+}
+
+#carousel-container{
+  position: absolute;
+  right: 0;
+  top:12%;
+}
+.carousel-card{
+  background-color: white;
+  margin: 0.5em 1em 0 0;
+}
+
+
+/*CONTROLS*/
+#ui-carousel-prev,
+#ui-carousel-next{
+  font-size: 2.0em;
+}
+
+
+.fa-arrow-up,
+.fa-arrow-down{
+  color: white;
+}
+
+
+
+// page-footer
+
+#social-home{
+  li{
+    font-size: 1.2em;
+  }
+}
+

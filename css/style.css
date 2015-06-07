@@ -68,7 +68,8 @@ i.mdi-navigation-menu {
 
 footer.page-footer {
   background-color: #1e857a;
-  padding: 0; }
+  padding: 0;
+  margin-top: 0; }
   footer.page-footer .shoe-cards {
     color: white;
     text-shadow: none; }
@@ -282,10 +283,13 @@ footer.page-footer {
   width: 150px; }
 
 #product-container {
-  margin-top: 90px; }
+  margin-top: 90px;
+  margin-right: 20px; }
 
 .brand-box {
-  height: 200px; }
+  height: 200px;
+  margin-top: 10px;
+  margin-right: 10px; }
 
 .bottom-sheet {
   height: 275px; }
