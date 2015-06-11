@@ -42,6 +42,6 @@
 			document.write(libhours);
 		} else {
 			var libhours = document.getElementById('open-close').innerHTML ="<a>Today&#8217;s hours:"+ " " + openTime + " &#8211; " + closeTime + "</a>";
-			document.write(libhours);
+			// document.write(libhours);
 		}
 	}

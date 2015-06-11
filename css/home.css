@@ -9,7 +9,7 @@ nav {
 #storeInfo {
   position: absolute;
   top: 0;
-  background-color: #1e857a;
+  background-color: #b32b42;
   height: 30px; }
 
 #storeInfo ul a {
@@ -17,7 +17,8 @@ nav {
   color: white; }
 
 #pageNav {
-  top: 30px; }
+  top: 30px;
+  background-color: transparent; }
   #pageNav #logo-container {
     line-height: 55px; }
 
@@ -51,12 +52,13 @@ nav {
 
 #carousel-container {
   position: absolute;
-  right: 0;
-  top: 12%; }
+  right: 3%;
+  top: 20%;
+  height: 420px; }
 
 .carousel-card {
   background-color: white;
-  margin: 0.5em 1em 0 0; }
+  border: 2px solid #1e857a !important; }
 
 /*CONTROLS*/
 #ui-carousel-prev,
@@ -69,5 +71,42 @@ nav {
 
 #social-home li {
   font-size: 1.2em; }
+
+#logo-container {
+  position: absolute;
+  top: 10%;
+  left: 10%; }
+  #logo-container .animated {
+    -webkit-animation-delay: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+    /* Safari and Chrome */
+    transition-timing-function: ease-in-out; }
+
+.brand-logo img {
+  height: auto; }
+
+@media (max-width: 992px) {
+  .main-body {
+    overflow: hidden;
+    background-image: url("../images/new-front.JPG");
+    background-size: 150%;
+    background-position-x: 79%; } }
+@media (max-width: 600px) {
+  #logo-container {
+    display: none; }
+
+  .phone,
+  .number,
+  .store-hours {
+    display: none; }
+
+  #open-close {
+    float: right; }
+
+  .main-body {
+    overflow: hidden;
+    background-image: url("../images/new-front.JPG");
+    background-size: 257%;
+    background-position-x: 79%; } }
 
 /*# sourceMappingURL=home.css.map */

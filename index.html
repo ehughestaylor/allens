@@ -2,21 +2,56 @@
   <html>
     <head>
       <title>Allens Shoes</title>
+        <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="carousel/widget/css/rcarousel.css" />
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/home.css">
       <link rel="stylesheet" href="css/animate.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <style>
+            .no-js #loader { 
+              display: none; 
+            }
+            .js #loader { 
+              display: block; 
+              position: absolute; 
+              left: 100px; 
+              top: 0; 
+            }
+            .se-pre-con {
+              position: fixed;
+              left: 0px;
+              top: 0px;
+              width: 100%;
+              height: 100%;
+              z-index: 9999;
+              background: url(images/allensLogo.png) center no-repeat #F4F3F5;
+            }
+      </style>
     </head>
     
     <!--   body start -->
-    <body>
-    <nav role="navigation">
-      <div class="nav-wrapper container"><!-- <a id="logo-container" href="#" class="brand-logo"><img src="images/allensLogo.png" alt=""></a> -->
+    <body class="main-body">
+      <div class="se-pre-con animate bouneIn"></div>
+    <nav id="storeInfo" role="store-info">
+        <div class="nav-wrapper container">
+          <ul>
+            <li><a href="tel:+6096463515"><i style="height:30px; line-height:30px;" class="mdi-communication-phone"></i></a></li>
+            <li class="number"><a href=""> (609) 646-3515</a></li>
+          <div class="right">            
+            <li class="store-hours">
+              <a href="#" style="color: #e7d7c8">Store Hours</a>
+            </li>
+            <li id="open-close"></li>
+          </ul>
+        </div>
+    </nav>
+    <nav id="pageNav" role="navigation">
+      <div class="nav-wrapper container">
       <!-- desktop nav -->
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Home</a></li>
@@ -37,260 +72,54 @@
     </div>
   </nav>
 
-<!--   <div class="section no-pad-bot white-text" id="home-banner">
-    <div class="valign-wrapper row" id="banner-row">
-      <div class="center-align valign col s12 ">
-        <div class="animated bounceInDown">
-        <img id="logo" class="responsive-img" src="images/allensLogo.png" alt="">
-        </div>
-      </div>
-      <div class="col s12">
-        <img class="responsive-img" src="images/store-front.jpg" alt="">
-      </div>
+        <div class="section main-section white-text">
+          <a id="logo-container" href="#" class="brand-logo"><img src="images/logo-new.svg" alt="" height="220" width="500px" class="animated slideInLeft"></a>
+          <!--   Top Row   -->
+          <div class="row top-row">
+            <div class="col s12 m8">
+            </div>
 
-    </div>
-  </div> -->
-
-
-  <div id="top-banner">
-     <div id="banner-row" class="valign-wrapper row" width="100%">
-      <div class="col s12 m6 center-align">        
-        <div class="animated bounceInDown">
-          <img id="logo" class="responsive-img" src="images/allensLogo.png" alt="">
-        </div>
-        <div class="animated fadeIn banner-text">
-          <h3 class="header center best-header">"Best Shoe Store in <br> Atlantic City"</h3>
-          <div class="row center">
-            <h5 class="header col s12 light">As Voted by the Atlantic City Press</h5>
-          </div>
-          <div class="row right">
-            <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light">Learn Why</a>
-          </div>
-        </div>
-      </div>
-      <div id="store-front-hd" class="col s12 m6">
-        <img class="responsive-img" src="images/store-front.jpg" alt="">
-      </div>
-    </div>   
-  </div>
-
-  <!-- SOCIAL MEDIA WIDGETS -->
-  <div class="social">
-    <ul class="soc-media-icons">
-      <li><i class="fa fa-facebook"></i></li>
-      <li><i class="fa fa-twitter"></i></li>
-      <li><i class="fa fa-google"></i></li>
-      <li><i class="fa fa-pinterest"></i></li>
-      <li><i class="fa fa-instagram"></i></li>
-    </ul>
-    <ul class="mobile-contact">
-      <li><a href="tel:555-555-5555"><i class="mdi-communication-phone"></i></a></li>
-      <li><a href="https://www.google.com/maps/place/Allen's+Shoe+Store/@39.385538,-74.556035,15z/data=!4m2!3m1!1s0x0:0x96cacb1547f50edb?sa=X&ei=soJkVbjsDMHPsQS0gYGADw&ved=0CI8BEPwSMA4"><i class="mdi-maps-directions"></i></a></li>
-    </ul>
-  </div>
-  
-  <!--Shoe Brand Featured Section -->
-<!--     <div id="featured-brands" class="row">
-      <div id="shoebrands" class="col s12 left-align">  
-        <div class="shoe-container">      
-          <div class="card shoe-brand-cta"><img src="images/ugg.png" alt=""></div>
-          <div class="card shoe-brand-cta"><img src="images/sas.png" alt=""></div>
-          <div class="card shoe-brand-cta"><img src="images/nb.png" alt=""></div>
-          <div class="card shoe-brand-cta"><img src="images/clarks.png" alt=""></div>
-          <div class="card shoe-brand-cta"><img src="images/dansko.png" alt=""></div>
-        </div>  
-      </div>
-    </div> -->
-
-
-  <div class="container">
-    <div class="section">
-      <!--   Icon Section   -->
-      <div class="row">
-        <h2 class="featured-prod-title center-align"> Featured Products </h2>
-        <div class="col s12 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/womens.jpg" alt="">
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action center-align">
-              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/womens.jpg" alt="">
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action center-align">
-              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/womens.jpg" alt="">
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action center-align">
-              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text">View</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/womens.jpg" alt="">
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text">View</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m12 center-align see-all">
-         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light white-text"> See All</a>
-      </div>
-      <!-- end of featured section  -->
-
-    </div>
-   </div>
-<div class="carousel-container">
-    <!-- main slider carousel -->
-    <div class="row" style="margin-bottom:0;">
-      <div id="slider">
-        <div id="carousel-bounding-box">
-          <div id="myCarousel" class="carousel slide">
-          <!-- main slider carousel items -->
-          <div class="carousel-inner">
-            <div class="active item" data-slide-number="0">
-              <img src="images/merrell-carousel.jpg" >
-                <!-- start of review -->
-                <div class="card review-card">
-                  <div class="row">
-                  <!-- review user image -->
-                    <div class="col s12 m3"> 
-                      <div class="testimonial-user-left">
-                        <img class="img-responsive circle" src="images/stock-girl.jpg">
-                      </div>
-                    </div>
-                  <!-- user review content -->
-                    <div class="col s12 m9">            
-                      <div class="card-content" style="padding-bottom:0;">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
-                      </div>
-                    </div>
+            <div class="col s12 m4 valign-wrapper">
+              <div id="carousel-container" height="420" class="icon-block valign center-align">
+                <!-- <a href="#" id="ui-carousel-prev"><i class="fa fa-arrow-up"></i></a> -->
+                <div id="carousel">
+                <div class="carousel-card">
+                  <img class="carousel-img responsive-img" src="images/ecco.png" alt="ecco"/>
                   </div>
-                  <!-- user name row -->
-                  <div class="row">
-                    <div class="col s6 offset-s6"><span class="flow-text">-John Doe</span></div>
-                  </div>
+                <div class="carousel-card">
+                  <img class="carousel-img responsive-img" src="images/ecco.png" alt="ecco"/>
                 </div>
-              <!-- end review -->
-            </div>
-            <div class="item" data-slide-number="1">
-              <img src="images/ugg-carousel.jpg" >
-              <!-- start of review -->
-                <div class="card review-card">
-                  <div class="row">
-                  <!-- review user image -->
-                    <div class="col s12 m3"> 
-                      <div class="testimonial-user-left">
-                        <img class="img-responsive circle" src="images/stock-girl.jpg">
-                      </div>
-                    </div>
-                  <!-- user review content -->
-                    <div class="col s12 m9">            
-                      <div class="card-content" style="padding-bottom:0;">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- user name row -->
-                  <div class="row">
-                    <div class="col s6 offset-s6"><span class="flow-text">-John Doe</span></div>
-                  </div>
+                <div class="carousel-card">
+                  <img class="carousel-img responsive-img" src="images/ecco.png" alt="ecco"/>
                 </div>
-              <!-- end review -->
-            </div>
-            <div class="item" data-slide-number="2">
-              <img src="images/bernie-carousel.jpg" >
-              <!-- start of review -->
-                <div class="card review-card">
-                  <div class="row">
-                  <!-- review user image -->
-                    <div class="col s12 m3"> 
-                      <div class="testimonial-user-left">
-                        <img class="img-responsive circle" src="images/stock-girl.jpg">
-                      </div>
-                    </div>
-                  <!-- user review content -->
-                    <div class="col s12 m9">            
-                      <div class="card-content" style="padding-bottom:0;">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- user name row -->
-                  <div class="row">
-                    <div class="col s6 offset-s6"><span class="flow-text">-John Doe</span></div>
-                  </div>
                 </div>
-              <!-- end review -->
+                <a href="#" id="ui-carousel-next"><i class="fa fa-arrow-down"></i></a>
+              </div>
             </div>
           </div>
-          <div class="col-md-12" id="slider-thumbs"> 
-            <!-- thumb navigation carousel items -->
-            <ul id="pic-selectors" class="list-inline center-align">
-              <li> <a id="carousel-selector-0" class="selected">
-                <img src="images/merrell-carousel.jpg" class="img-responsive z-depth-3">
-              </a></li>
-              <li> <a id="carousel-selector-1">
-                <img src="images/ugg-carousel.jpg" class="img-responsive z-depth-3">
-              </a></li>
-              <li> <a id="carousel-selector-2">
-                <img src="images/bernie-carousel.jpg" class="img-responsive z-depth-3">
-              </a></li>
-            </ul>  
-          </div>
+
+          <!-- top row end  -->
+          <!-- CAROUSEL  -->
+
+    <!--     end  -->
         </div>
       </div>
-  </div>
     <!--/main slider carousel-->
     <footer class="page-footer stitched">
       <div class="container">
         <div class="row" style="margin-bottom:0;">
           <div class="col l5 s12 shoe-cards">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="about/index.html">About</a></li>
-              <li><a href="products/index.html">Products</a></li>
-              <li><a href="/blog/">Blogs</a></li>
-              <li><a href="contact/index.html">Contact Us</a></li>
+            <ul id="social-home">
+              <li><a href=""><i class="fa fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa fa-google"></i></a></li>
+              <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+              <li><a href=""><i class="fa fa-instagram"></i></a></li>
             </ul>
           </div>
           <div class="col l7 s12 shoe-cards">
             <p class="color-text right-align" style="margin-top:13px;">
-              &copy; 2015 Argyle Interactive
+              &copy; 2015 Allen's Shoes
             </p>
           </div>
         </div>
@@ -300,10 +129,19 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="carousel/widget/lib/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="carousel/widget/lib/jquery.ui.core.min.js"></script>
+        <script type="text/javascript" src="carousel/widget/lib/jquery.ui.widget.min.js"></script>
+        <script type="text/javascript" src="carousel/widget/lib/jquery.ui.rcarousel.min.js"></script>
         <script src="js/materialize.min.js"></script>
-        <script src="js/velocity.min.js"></script>
-        <script src="js/todayshours.js"></script>
 
+        
+        <script type="text/javascript">
+          jQuery(function($) {
+            $( "#carousel" ).rcarousel({orientation: "vertical", step:1, visible: 2, margin:10, height:200, width:200, auto: {enabled: true}});
+          });
+        </script>
+        <script src="js/todayshours.js"></script>
         <script src="js/script.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

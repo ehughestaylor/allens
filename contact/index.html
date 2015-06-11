@@ -4,6 +4,7 @@
       <title>Allens Shoes</title>
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/animate.min.css">
 
@@ -12,6 +13,21 @@
     </head>
 
   <body>
+    <div class="se-pre-con animate bouneIn"></div>
+    <nav id="storeInfo" role="store-info">
+        <div class="nav-wrapper container">
+          <ul>
+            <li class="phone"><a href="" style="color: #e7d7c8"> Phone Number</a></li>
+            <li class="number"><a href=""> (609) 646-3515 |</a></li>
+            <li><a href="tel:+6096463515"><i style="height:30px; line-height:30px;" class="mdi-communication-phone"></i></a></li>
+          <div class="right">            
+            <li class="store-hours">
+              <a href="#" style="color: #e7d7c8">Store Hours</a>
+            </li>
+            <li id="open-close"></li>
+          </ul>
+        </div>
+    </nav>
     <nav role="navigation">
       <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="../images/allensLogo.png" alt=""></a>
       <!-- desktop nav -->
@@ -45,7 +61,7 @@
     <div class="container">
       <div class="row">
         <!-- column left -->
-        <div class="col s12 m7 column-left card">
+        <div class="col s12 m8 column-left card" style="margin-right:1em;">
           <h2> Get in Touch </h2>
           <div class="row">
             <form class="col s12" >
@@ -96,31 +112,33 @@
       </div>
     </div>
   </div>
-   <footer class="page-footer stitched">
-    <div class="container">
-      <div class="row" style="margin-bottom:0;">
-        <div class="col l5 s12 shoe-cards">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about/index.html">About</a></li>
-            <li><a href="../products/index.html">Products</a></li>
-            <li><a href="../blog/">Blog</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col l7 s12  shoe-cards">
-          <p class="color-text right-align">
-            &copy; 2015 Argyle Interactive
-          </p>
+
+<!-- footer -->
+    <footer class="page-footer stitched">
+      <div class="container">
+        <div class="row" style="margin-bottom:0;">
+          <div class="col l5 s12 shoe-cards">
+            <ul id="social-home">
+              <li><a href=""><i class="fa fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa fa-google"></i></a></li>
+              <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+              <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="col l7 s12 shoe-cards">
+            <p class="color-text right-align" style="margin-top:13px;">
+              &copy; 2015 Argyle Interactive
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="../js/materialize.min.js"></script>
-
+        <script src="../js/todayshours.js"></script>
         <script src="../js/script.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -35,10 +35,16 @@ nav .button-collapse i{
 nav{
   background-color: rgba(255,255,255,0.8);
   position: absolute;
-  top: 0;
+  top: 30px;
   height: 60px;
 }
 nav ul a{
+  color: $tertiary-color;
+  margin-bottom: -2px;
+  line-height: 60px;
+  cursor: pointer!important;
+}
+nav ul a:hover{
   color: $tertiary-color;
   margin-bottom: -2px;
   line-height: 60px;
@@ -48,7 +54,13 @@ nav ul li{
   line-height: auto;
 }
 nav ul li:hover{
-  border: 1px solid white;
+  border: none;
+  border-bottom: 3px solid white;
+  background:none;
+  a{
+    color: $tertiary-color;
+  }
+
 }
 nav ul a:hover{
   color: white;
@@ -61,6 +73,24 @@ i.mdi-navigation-menu{
   background-color: rgba(179,43,66,0.8);
   a{
     color: #FFF;
+  }
+}
+#storeInfo{
+  position: absolute;
+  top: 0;
+  background-color: #1e857a;
+  height: 30px;
+}
+
+#storeInfo ul a{
+  line-height: 30px;
+  color: white;
+}
+
+#pageNav{
+  top:30px;
+  #logo-container{
+    line-height: 55px;
   }
 }
 
@@ -92,16 +122,17 @@ i.mdi-navigation-menu{
 //footer
 
 footer.page-footer{
-  background-color: $tertiary-color;
+  background-color: white;
   padding: 0;
   margin-top: 0;
   .color-text{
+    color: grey;
   }
   .shoe-cards{
     color: white;
     text-shadow: none;
     a{
-      color: #FFF;
+      color: $secondary-color;
       text-decoration: none;
     }
     a:hover{
@@ -132,6 +163,9 @@ footer.page-footer{
   font-weight: normal;
 }
 
+#social-home li {
+  font-size: 1.2em;
+}
 
 
 
@@ -267,7 +301,7 @@ footer.page-footer{
 
 /////////////////// CONTACT PAGE STYLES //////////////////////////
 .map-section{
-  padding-top:55px;
+  padding-top:87px;
 }
 #contact-form{
   // background:url(../images/sprinkles.png);

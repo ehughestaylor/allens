@@ -3,6 +3,7 @@
     <head>
       <title>Allens Shoes</title>
       <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
       <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/animate.min.css">
@@ -13,6 +14,22 @@
     </head>
 
  <body>
+  <div class="se-pre-con animate bouneIn"></div>
+    <nav id="storeInfo" role="store-info">
+        <div class="nav-wrapper container">
+          <ul>
+            <li class="phone"><a href="" style="color: #e7d7c8"> Phone Number</a></li>
+            <li class="number"><a href=""> (609) 646-3515 |</a></li>
+            <li><a href="tel:+6096463515"><i style="height:30px; line-height:30px;" class="mdi-communication-phone"></i></a></li>
+          <div class="right">            
+            <li class="store-hours">
+              <a href="#" style="color: #e7d7c8">Store Hours</a>
+            </li>
+            <li id="open-close"></li>
+          </ul>
+        </div>
+    </nav>
+  <!-- MAIN NAV -->
     <nav role="navigation">
       <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="../images/allensLogo.png" alt=""></a>
       <!-- desktop nav -->
@@ -61,23 +78,111 @@ text-indent: 40px;;">Quality fit and service since 1906, Allen's Shoes has serve
      </div>
     </div>
   <!-- SLIDER SECTION -->
-    <div class="container slider">
-      <h2>Gallery</h2>
-      <ul class="slides">
-        <li>
-          <img class="" src="images/shoes.png"> <!-- random image -->
-          <div class="caption center-align" style="top:3%;">
+  <div class="carousel-container">
+    <!-- main slider carousel -->
+    <div class="row" style="margin-bottom:0;">
+      <div id="slider">
+        <div id="carousel-bounding-box">
+          <div id="myCarousel" class="carousel slide">
+          <!-- main slider carousel items -->
+          <div class="carousel-inner">
+            <div class="active item" data-slide-number="0">
+              <img src="../images/merrell-carousel.jpg" >
+                <!-- start of review -->
+                <div class="card review-card">
+                  <div class="row">
+                  <!-- review user image -->
+                    <div class="col s12 m3"> 
+                      <div class="testimonial-user-left">
+                        <img class="img-responsive circle" src="../images/stock-girl.jpg">
+                      </div>
+                    </div>
+                  <!-- user review content -->
+                    <div class="col s12 m9">            
+                      <div class="card-content" style="padding-bottom:0;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- user name row -->
+                  <div class="row">
+                    <div class="col s6 offset-s6"><span class="flow-text">-John Doe</span></div>
+                  </div>
+                </div>
+              <!-- end review -->
+            </div>
+            <div class="item" data-slide-number="1">
+              <img src="../images/ugg-carousel.jpg" >
+              <!-- start of review -->
+                <div class="card review-card">
+                  <div class="row">
+                  <!-- review user image -->
+                    <div class="col s12 m3"> 
+                      <div class="testimonial-user-left">
+                        <img class="img-responsive circle" src="../images/stock-girl.jpg">
+                      </div>
+                    </div>
+                  <!-- user review content -->
+                    <div class="col s12 m9">            
+                      <div class="card-content" style="padding-bottom:0;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- user name row -->
+                  <div class="row">
+                    <div class="col s6 offset-s6"><span class="flow-text">-John Doe</span></div>
+                  </div>
+                </div>
+              <!-- end review -->
+            </div>
+            <div class="item" data-slide-number="2">
+              <img src="../images/bernie-carousel.jpg" >
+              <!-- start of review -->
+                <div class="card review-card">
+                  <div class="row">
+                  <!-- review user image -->
+                    <div class="col s12 m3"> 
+                      <div class="testimonial-user-left">
+                        <img class="img-responsive circle" src="../images/stock-girl.jpg">
+                      </div>
+                    </div>
+                  <!-- user review content -->
+                    <div class="col s12 m9">            
+                      <div class="card-content" style="padding-bottom:0;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis quod quidem facilis doloremque, ipsum impedit. Aliquam repellat, quod. Aliquam officiis amet omnis eos id similique recusandae, ipsum vero tenetur!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- user name row -->
+                  <div class="row">
+                    <div class="col s6 offset-s6"><span class="flow-text">-John Doe</span></div>
+                  </div>
+                </div>
+              <!-- end review -->
+            </div>
           </div>
-        </li>
-        <!-- end of slide -->
-        <li>
-          <img src="images/banner-img.png"> <!-- random image -->
-          <div class="caption center-align" style="top:3%;">
+          <div class="col-md-12" id="slider-thumbs"> 
+            <!-- thumb navigation carousel items -->
+            <ul id="pic-selectors" class="list-inline center-align">
+              <li> <a id="carousel-selector-0" class="selected">
+                <img src="../images/merrell-carousel.jpg" class="img-responsive z-depth-3">
+              </a></li>
+              <li> <a id="carousel-selector-1">
+                <img src="../images/ugg-carousel.jpg" class="img-responsive z-depth-3">
+              </a></li>
+              <li> <a id="carousel-selector-2">
+                <img src="../images/bernie-carousel.jpg" class="img-responsive z-depth-3">
+              </a></li>
+            </ul>  
           </div>
-        </li>
-        <!-- end of slide -->
-      </ul>
-    </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- SOCIAL  -->
   <div class="social">
     <ul class="soc-media-icons">
       <li><i class="fa fa-facebook"></i></li>
@@ -115,10 +220,32 @@ text-indent: 40px;;">Quality fit and service since 1906, Allen's Shoes has serve
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="../js/materialize.min.js"></script>
+        <script src="../js/todayshours.js"></script>
         <script>
-            $(document).ready(function(){
-              $('.slider').slider({full_width: true});
+              $(document).ready(function(){
+                $('#myCarousel').carousel({
+                    interval: 4000
+                });
+
+                // handles the carousel thumbnails
+                $('[id^=carousel-selector-]').click( function(){
+                  var id_selector = $(this).attr("id");
+                  var id = id_selector.substr(id_selector.length -1);
+                  id = parseInt(id);
+                  $('#myCarousel').carousel(id);
+                  $('[id^=carousel-selector-]').removeClass('selected');
+                  $(this).addClass('selected');
+                });
+
+                // when the carousel slides, auto update
+                $('#myCarousel').on('slid', function (e) {
+                  var id = $('.item.active').data('slide-number');
+                  id = parseInt(id);
+                  $('[id^=carousel-selector-]').removeClass('selected');
+                  $('[id=carousel-selector-'+id+']').addClass('selected');
+                });
             });
         </script>
 

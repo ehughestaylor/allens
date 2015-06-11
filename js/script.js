@@ -18,13 +18,24 @@
 // };
 
 
+$(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");
+});
 
 $(document).ready(function(){
-  checkOpenStatus();
+  // VERTICAL CAROUSEL ON HOME PAGE
+  $( "#carousel" ).rcarousel({orientation: "vertical", height:200, width:300, auto: {enabled: true}});
+  
   $('.slider').slider({full_width: true});
+  
+
   // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  
   $('.modal-trigger').leanModal();
   //start slider and have slider be full width
+  
+
   $('#myCarousel').carousel({
       interval: 4000
   });

@@ -20,7 +20,7 @@ nav {
 #storeInfo{
   position: absolute;
   top: 0;
-  background-color: #1e857a;
+  background-color: $secondary-color;
   height: 30px;
 }
 
@@ -31,6 +31,7 @@ nav {
 
 #pageNav{
   top:30px;
+  background-color: transparent;
   #logo-container{
     line-height: 55px;
   }
@@ -72,12 +73,13 @@ nav {
 
 #carousel-container{
   position: absolute;
-  right: 0;
-  top:12%;
+  right: 3%;
+  top:20%;
+  height: 420px;
 }
 .carousel-card{
   background-color: white;
-  margin: 0.5em 1em 0 0;
+  border: 2px solid $tertiary-color !important;
 }
 
 
@@ -100,6 +102,65 @@ nav {
 #social-home{
   li{
     font-size: 1.2em;
+  }
+}
+
+
+//HOME LOGO
+
+#logo-container{
+  position:absolute;
+  top: 10%;
+  left: 10%;
+  .animated{
+    -webkit-animation-delay:0.5s;
+    -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+     transition-timing-function: ease-in-out;
+  }
+}
+
+  .brand-logo{
+    img{
+    height: auto;
+    }
+  }
+
+
+
+// FOOTER
+
+//MEDIA QUERIES
+
+// Small screens are defined as having a max-width of 600px 
+// Medium screens are defined as having a max-width of 992px 
+// Large screen are defined as having a min-width of 992px
+@media(max-width:992px){
+  .main-body {
+  overflow: hidden;
+  background-image: url("../images/new-front.JPG");
+  background-size: 150%;
+  background-position-x: 79%;
+  }
+}
+
+
+@media(max-width:600px){
+  #logo-container{
+    display: none;
+  }
+  .phone,
+  .number,
+  .store-hours{
+    display: none;
+  }
+  #open-close{
+    float: right;
+  }
+  .main-body {
+  overflow: hidden;
+  background-image: url("../images/new-front.JPG");
+  background-size: 257%;
+  background-position-x: 79%;
   }
 }
 
