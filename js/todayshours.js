@@ -1,47 +1,39 @@
-// Today's Library Hours v.1 (March 30, 2011)
-// Grand Valley State University Library Labs, 2011
-// by Matthew Reidsma, reidsmam@gvsu.edu
-// 
-// Released under the GPL: http://www.gnu.org/licenses/gpl.html
-//
 
-// Configuration:
-// ------------------------------------------------------------------
+var today = new Date(),
+    // get user time in hours up to 24
+    h = today.getHours(), 
+    d = today.getDay();
 
-// Enter the time your library opens, starting with Sunday. If your library is closed,
-// enter "X" for the time. In the following example, the library is closed on Sunday 
-// and opens at 9am Monday through Friday. On Saturday, the library opens at 1:30pm. 
-// The script will print whatever format you decide to use in these variables. Make 
-// sure to leave the quotes!
-//
-// EXAMPLE:
-//
-// var open=["X","9:00am","9:00am","9:00am","9:00am","9:00am","1:30pm"];
+// monday through friday open and close 
+monFriOpen = 10;
+monFriClose = 19.45;
 
-	var open=["11:00am","10:00am","10:00am","10:00am","10:00am","10:00am","10:00am"]; // Edit this line 
+satOpen = 10;
+satClose = 18;
 
-// Enter the time your library closes, starting with Sunday. If your library is 
-// closed, enter "X" for the time.
+sunOpen= 11;
+sunClose= 16.45; 
 
-	var close=["4:45pm","7:45pm","7:45pm","7:45pm","7:45pm","7:45pm","5:45pm"]; // Edit this line
-		
-// Do not edit below this line
-// -------------------------------------------------------------------
-		
-	var currentTime = new Date()
-	var day = currentTime.getDay()
-
-	var openTime = open[day];
-	var closeTime = close[day];
-	createHours(openTime,closeTime);
-		
-	function createHours(openTime, closeTime) 
-	{ // Build the hours string
-		if(openTime == "X") {
-			var libhours = "Closed";
-			document.write(libhours);
-		} else {
-			var libhours = document.getElementById('open-close').innerHTML ="<a>Today&#8217;s hours:"+ " " + openTime + " &#8211; " + closeTime + "</a>";
-			// document.write(libhours);
-		}
-	}
+//Check day loop
+if (d > 0 && d < 6){
+    //if we are open 
+    if (h >= monFriOpen && h < monFriClose){
+        $( "#open-close" ).html( "<p>We are open until 7:45pm!<i class='fa fa-circle green-text'></i></p> " );
+    } else{
+        $( "#open-close" ).html( "<p>Sorry we are closed!<i class='fa fa-circle red-text'></i></p> " );
+    }
+} else if (d === 6){
+    if (h >= satOpen && h < satClose){
+        $( "#open-close" ).html( "<a>We are open until 6:00pm.</a>" );
+    } else{
+        alert('sorry we are closed');
+    }
+    //execute check time function for saturday
+} else {
+    //else it must be sunday
+    if (h >= sunOpen && h < sunClose){
+        $( "#open-close" ).html( "<a>We are open until 6:00pm.</a>" );
+    } else{
+        alert('sorry we are closed');
+    }
+}

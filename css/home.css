@@ -85,6 +85,26 @@ nav {
 .brand-logo img {
   height: auto; }
 
+#open-close p {
+  line-height: 30px; }
+#open-close p:hover {
+  border: none;
+  cursor: pointer; }
+
+#open-close:hover {
+  border: none; }
+
+i.fa.fa-circle.green-text,
+i.fa.fa-circle.red-text {
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
+  display: inline-block;
+  font-size: 1.2em;
+  margin-left: 0.5em;
+  padding: 0;
+  line-height: 0; }
+
 @media (max-width: 992px) {
   .main-body {
     overflow: hidden;
